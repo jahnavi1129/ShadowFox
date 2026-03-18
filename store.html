@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion Store</title>
+  <link rel="stylesheet" href="store.css">
+</head>
+<body>
+
+<header>
+  <h1>Fashion Store</h1>
+</header>
+
+
+    <div class="Items">
+      <table id = "item-table">
+          <tr>
+            <td>
+                 <img src="https://i.pinimg.com/736x/fc/d4/db/fcd4dbbd9d3f6d34c2ab71abac5f06db.jpg"alt="t-shirt" class="Item-img">
+                <h4>Men</h4>
+                </td>
+              <td>
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.fyHi-jy0BO_WpCKgV9zePQHaLH?w=1280&h=1920&rs=1&pid=ImgDetMain&o=7&rm=3" alt="women" class="Item-img">
+                <h4>Women</h4>
+              </td>
+              <td>
+                <img src="https://tse3.mm.bing.net/th/id/OIP.xrVQK9iZYsSCM4TEZPAG4QHaLH?rs=1&pid=ImgDetMain&o=7&rm=3"alt="kids" class="Item-img">
+                <h4>Kids</h4>
+              </td>
+              <td>
+                <img src="https://static.vecteezy.com/system/resources/previews/029/282/443/non_2x/cosmetic-beauty-products-generative-ai-free-photo.jpg"alt="beauty" class="Item-img">
+                <h4>Beauty</h4>
+              </td>
+              <td>
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.9eU6zJcPXl2UZokW8ZXAswHaKe?rs=1&pid=ImgDetMain&o=7&rm=3"alt="jewellery" class="Item-img">
+                <h4>Jewellery</h4>
+              </td>
+              <td>
+                <img src="https://tse3.mm.bing.net/th/id/OIP.H6PIsuVGnDfUyO2VQFcYxAHaLH?rs=1&pid=ImgDetMain&o=7&rm=3"alt="footwear" class="Item-img">
+                <h4>Footwear</h4>
+              </td>
+          </tr>
+      </table>
+    </div>
+<div class="container">
+  <!-- Main Content -->
+  <main>
+    <!-- Shopping Banner -->
+    <section class="banner">
+      <img src="https://thumbs.dreamstime.com/b/shopping-time-banner-realistic-d-map-cart-gift-bags-vector-illustration-249940758.jpg" alt="shopping">
+    </section>
+
+    <!-- Upcoming Sales -->
+    <section class="sales">
+      <h2>Upcoming Sales</h2>
+      <table>
+        <tr>
+          <th>Festival</th>
+          <th>Discount</th>
+          <th>Start</th>
+          <th>End</th>
+        </tr>
+        <tr>
+          <td>Diwali</td>
+          <td>40%</td>
+          <td>10 Aug</td>
+          <td>18 Aug</td>
+        </tr>
+        <tr>
+          <td>Christmas</td>
+          <td>60%</td>
+          <td>18 Dec</td>
+          <td>20 Dec</td>
+        </tr>
+        <tr>
+          <td>New Year</td>
+          <td>70%</td>
+          <td>30 Dec</td>
+          <td>2 Jan</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+      <h2>Fashion Store</h2>
+
+      <!-- Sorting -->
+      <select id="sort" onchange="sortProducts()">
+        <option value="">Sort By</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+      </select><br><br>
+
+      <div id="product-list" class="product-list"></div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment">
+      <h2>Payment Options</h2>
+      <p>Credit Card | Debit Card | UPI | Net Banking</p>
+      <div class="checkout">
+    <button onclick="checkout()">Proceed to Payment</button>
+</div>
+    </section>
+
+  </main>
+
+</div>
+
+<footer>
+  <p>© 2026 Fashion Store</p>
+</footer>
+
+<script src="store.js"></script>
+</body>
+</html>
